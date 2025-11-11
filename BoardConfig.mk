@@ -168,6 +168,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
+include vendor/xiaomi/vayu-miuicamera/products/board.mk
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
